@@ -11,10 +11,10 @@ export class JogadoresController {
     
     const { email } = criarJogadorDto;
 
-    return JSON.stringify(`
+    return JSON.stringify(
      {
-      "nome": ${email}
+      "nome": email
      } 
-    `);
+    );
   }
 }
